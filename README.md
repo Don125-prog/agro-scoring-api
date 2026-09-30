@@ -55,18 +55,3 @@ uvicorn main:app --reload
 
 Эти данные дают `risk_score = 0.9` и `risk_level = high`.
 
-## Что сфотографировать для отчёта
-
-1. `/docs` — общий Swagger UI со всеми пятью endpoints.
-2. `POST /predict` — успешный ответ 200.
-3. `POST /predict` с `"area_ha": -100` — ошибка Pydantic 422.
-4. `GET /predictions/not-existing-id` — ошибка 404.
-5. При необходимости дополнительно показать `GET /predictions?limit=2` и `GET /predictions?risk_level=high`.
-
-## Автоматические тесты
-
-```powershell
-pytest -q
-```
-
-Все тесты должны завершиться успешно.
