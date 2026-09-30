@@ -18,6 +18,7 @@ agro_api/
     ├── swagger.png
     ├── predict_success.png
     ├── pydantic_error.png
+    ├──   ```
     └── not_found.png
 ```
 
